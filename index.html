@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>나의 포트폴리오</title>
+  <link href="https://fonts.googleapis.com/css2?family=Pretendard&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0; padding: 0; box-sizing: border-box;
+      font-family: 'Pretendard', sans-serif;
+    }
+
+    body {
+      line-height: 1.6;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
+    header {
+      background-color: #2c3e50;
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    header h1 {
+      margin-bottom: 10px;
+    }
+
+    nav a {
+      color: #fff;
+      margin: 0 15px;
+      text-decoration: none;
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .project-card {
+      background: #fff;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      transition: transform 0.2s;
+    }
+
+    .project-card:hover {
+      transform: translateY(-5px);
+    }
+
+    footer {
+      background: #2c3e50;
+      color: #fff;
+      text-align: center;
+      padding: 20px 0;
+      font-size: 14px;
+    }
+
+    @media (max-width: 600px) {
+      nav {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>홍길동의 포트폴리오</h1>
+    <nav>
+      <a href="#about">소개</a>
+      <a href="#projects">프로젝트</a>
+      <a href="#contact">연락처</a>
+    </nav>
+  </header>
+
+  <section id="about">
+    <h2>🙋‍♂️ 자기소개</h2>
+    <p>안녕하세요! 저는 웹 프론트엔드 개발자 홍길동입니다. 사용자 중심의 UI/UX를 지향하며, HTML, CSS, JavaScript를 기반으로 React 등의 프레임워크도 공부하고 있습니다.</p>
+  </section>
+
+  <section id="projects">
+    <h2>📂 프로젝트</h2>
+    <div class="projects">
+      <div class="project-card">
+        <h3>To-Do List 앱</h3>
+        <p>간단한 할 일 목록을 관리할 수 있는 웹앱입니다. 로컬스토리지를 활용해 저장됩니다.</p>
+      </div>
+      <div class="project-card">
+        <h3>반응형 블로그</h3>
+        <p>HTML/CSS로 만든 블로그 템플릿으로, 다양한 해상도에서 잘 보이도록 설계되었습니다.</p>
+      </div>
+      <!-- 여기에 더 추가해도 됨 -->
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>📬 연락처</h2>
+    <p>📧 이메일: <a href="w1thfu11@daum.net">w1thfu11@daum.net</a></p>
+   </p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 홍길동. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
+
