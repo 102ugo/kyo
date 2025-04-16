@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Kyo의 포트폴리오</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <title>KYO.zip</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
   <style>
     :root {
-      --main-blue: #3a8dde;
+      --main-blue: #5ca6f0;
       --dark-blue: #2c3e50;
       --light-blue: #d6ecff;
       --white: #ffffff;
@@ -20,9 +20,10 @@
     }
 
     body {
-      font-family: 'Roboto', sans-serif;
+      font-family: 'Noto Sans KR', sans-serif;
       background-color: var(--light-blue);
       color: var(--dark-blue);
+      line-height: 1.6;
     }
 
     header {
@@ -30,7 +31,6 @@
       color: var(--white);
       padding: 3rem 1rem;
       text-align: center;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
     }
 
     header h1 {
@@ -52,17 +52,12 @@
       font-size: 2rem;
       margin-bottom: 1.5rem;
       color: var(--main-blue);
+      border-bottom: 2px solid var(--main-blue);
+      padding-bottom: 0.5rem;
     }
 
-    .intro {
-      font-size: 1.1rem;
-      line-height: 1.6;
-    }
-
-    .projects {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 1.5rem;
+    .section-content {
+      margin-top: 1rem;
     }
 
     .project {
@@ -70,21 +65,12 @@
       padding: 1.5rem;
       border-radius: 1rem;
       box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-      transition: transform 0.3s ease;
-    }
-
-    .project:hover {
-      transform: translateY(-5px);
+      margin-bottom: 1.5rem;
     }
 
     .project h3 {
       color: var(--main-blue);
       margin-bottom: 0.5rem;
-    }
-
-    .project p {
-      font-size: 0.95rem;
-      color: #333;
     }
 
     footer {
@@ -104,37 +90,58 @@
 </head>
 <body>
   <header>
-    <h1>안녕하세요, 저는 Kyo입니다 👋</h1>
-    <p>웹 프론트엔드 개발자 포트폴리오</p>
+    <h1>PM 오윤경에 대한 압축폴더</h1>
+    <p>함께 일할수록 빛나는 사람</p>
   </header>
 
   <section>
-    <h2>소개</h2>
-    <p class="intro">
-      프론트엔드 개발을 사랑하는 개발자 Kyo입니다.  
-      React, HTML, CSS, JavaScript 등 다양한 기술을 활용해 사용자가 편리하게 느끼는 UI를 만드는 것이 목표입니다.
-    </p>
+    <h2>About Me</h2>
+    <div class="section-content">
+      <p>함께 일할수록 빛나는 사람, PM 오윤경입니다.데이터로 소통하기 위한 SQLD 데이터 추출 역량, 영화전공으로 익혀온 콘텐츠 제작,그동안 쌓아온 마케팅 경력으로 사용자에게 더 나은 서비스를 제공하고 싶습니다다 .</p>
+    </div>
   </section>
 
   <section>
-    <h2>프로젝트</h2>
-    <div class="projects">
+    <h2>Skills</h2>
+    <div class="section-content">
+      <ul>
+        <li><strong>SKILL:</strong> SQL, Design</li>
+      </ul>
+    </div>
+  </section>
 
-      <div class="project">
-        <h3>📝 Todo 앱 (React)</h3>
-        <p>React로 제작한 할 일 목록 앱. 컴포넌트 구조와 상태 관리 연습용으로 개발.</p>
-      </div>
+  <section>
+    <h2>Career</h2>
+    <div class="section-content">
+      <p><strong>회사명:</strong> 우아한 형제들 (2023.09 - 현재)</p>
+      <p><strong>직무:</strong> 마케터</p>
+  
+    </div>
+  </section>
 
-      <div class="project">
-        <h3>🌐 반응형 웹사이트</h3>
-        <p>HTML, CSS, JS로 제작한 반응형 웹사이트. 다양한 화면 크기에서 자연스럽게 보이도록 제작.</p>
-      </div>
+  <section>
+    <h2>Education</h2>
+    <div class="section-content">
+      <p><strong>대학교:</strong> 명지대학교 예술학부 영화전공공</p>
 
-      <div class="project">
-        <h3>📊 데이터 시각화 대시보드</h3>
-        <p>Chart.js와 API를 사용해 데이터를 시각화하는 대시보드 페이지.</p>
-      </div>
+    </div>
+  </section>
 
+  <section>
+    <h2>Projects</h2>
+    <div class="project">
+      <h3>📝 Todo 앱 (React)</h3>
+      <p>React로 제작한 할 일 목록 앱. 컴포넌트 구조와 상태 관리 연습용으로 개발.</p>
+    </div>
+
+    <div class="project">
+      <h3>🌐 반응형 웹사이트</h3>
+      <p>HTML, CSS, JS로 제작한 반응형 웹사이트. 다양한 화면 크기에서 자연스럽게 보이도록 제작.</p>
+    </div>
+
+    <div class="project">
+      <h3>📊 데이터 시각화 대시보드</h3>
+      <p>Chart.js와 API를 사용해 데이터를 시각화하는 대시보드 페이지.</p>
     </div>
   </section>
 
@@ -143,3 +150,4 @@
   </footer>
 </body>
 </html>
+
