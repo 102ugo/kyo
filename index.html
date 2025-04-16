@@ -2,119 +2,144 @@
 <html lang="ko">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>나의 포트폴리오</title>
-  <link href="https://fonts.googleapis.com/css2?family=Pretendard&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kyo의 포트폴리오</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <style>
+    :root {
+      --main-blue: #3a8dde;
+      --dark-blue: #2c3e50;
+      --light-blue: #d6ecff;
+      --white: #ffffff;
+    }
+
     * {
-      margin: 0; padding: 0; box-sizing: border-box;
-      font-family: 'Pretendard', sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
     }
 
     body {
-      line-height: 1.6;
-      background-color: #f9f9f9;
-      color: #333;
+      font-family: 'Roboto', sans-serif;
+      background-color: var(--light-blue);
+      color: var(--dark-blue);
     }
 
     header {
-      background-color: #2c3e50;
-      color: #fff;
-      padding: 20px 0;
+      background: var(--main-blue);
+      color: var(--white);
+      padding: 3rem 1rem;
       text-align: center;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
     }
 
     header h1 {
-      margin-bottom: 10px;
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
     }
 
-    nav a {
-      color: #fff;
-      margin: 0 15px;
-      text-decoration: none;
+    header p {
+      font-size: 1.2rem;
     }
 
     section {
-      padding: 60px 20px;
+      padding: 3rem 1.5rem;
       max-width: 1000px;
       margin: auto;
     }
 
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+      color: var(--main-blue);
+    }
+
+    .intro {
+      font-size: 1.1rem;
+      line-height: 1.6;
+    }
+
     .projects {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
     }
 
-    .project-card {
-      background: #fff;
-      padding: 20px;
-      border-radius: 12px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-      transition: transform 0.2s;
+    .project {
+      background: var(--white);
+      padding: 1.5rem;
+      border-radius: 1rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
     }
 
-    .project-card:hover {
+    .project:hover {
       transform: translateY(-5px);
     }
 
-    footer {
-      background: #2c3e50;
-      color: #fff;
-      text-align: center;
-      padding: 20px 0;
-      font-size: 14px;
+    .project h3 {
+      color: var(--main-blue);
+      margin-bottom: 0.5rem;
     }
 
-    @media (max-width: 600px) {
-      nav {
-        display: flex;
-        flex-direction: column;
+    .project p {
+      font-size: 0.95rem;
+      color: #333;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      font-size: 0.9rem;
+      color: #555;
+      background-color: #e9f4ff;
+    }
+
+    @media (max-width: 500px) {
+      header h1 {
+        font-size: 2rem;
       }
     }
   </style>
 </head>
 <body>
-
   <header>
-    <h1>홍길동의 포트폴리오</h1>
-    <nav>
-      <a href="#about">소개</a>
-      <a href="#projects">프로젝트</a>
-      <a href="#contact">연락처</a>
-    </nav>
+    <h1>안녕하세요, 저는 Kyo입니다 👋</h1>
+    <p>웹 프론트엔드 개발자 포트폴리오</p>
   </header>
 
-  <section id="about">
-    <h2>🙋‍♂️ 자기소개</h2>
-    <p>안녕하세요! 저는 웹 프론트엔드 개발자 홍길동입니다. 사용자 중심의 UI/UX를 지향하며, HTML, CSS, JavaScript를 기반으로 React 등의 프레임워크도 공부하고 있습니다.</p>
+  <section>
+    <h2>소개</h2>
+    <p class="intro">
+      프론트엔드 개발을 사랑하는 개발자 Kyo입니다.  
+      React, HTML, CSS, JavaScript 등 다양한 기술을 활용해 사용자가 편리하게 느끼는 UI를 만드는 것이 목표입니다.
+    </p>
   </section>
 
-  <section id="projects">
-    <h2>📂 프로젝트</h2>
+  <section>
+    <h2>프로젝트</h2>
     <div class="projects">
-      <div class="project-card">
-        <h3>To-Do List 앱</h3>
-        <p>간단한 할 일 목록을 관리할 수 있는 웹앱입니다. 로컬스토리지를 활용해 저장됩니다.</p>
+
+      <div class="project">
+        <h3>📝 Todo 앱 (React)</h3>
+        <p>React로 제작한 할 일 목록 앱. 컴포넌트 구조와 상태 관리 연습용으로 개발.</p>
       </div>
-      <div class="project-card">
-        <h3>반응형 블로그</h3>
-        <p>HTML/CSS로 만든 블로그 템플릿으로, 다양한 해상도에서 잘 보이도록 설계되었습니다.</p>
+
+      <div class="project">
+        <h3>🌐 반응형 웹사이트</h3>
+        <p>HTML, CSS, JS로 제작한 반응형 웹사이트. 다양한 화면 크기에서 자연스럽게 보이도록 제작.</p>
       </div>
-      <!-- 여기에 더 추가해도 됨 -->
+
+      <div class="project">
+        <h3>📊 데이터 시각화 대시보드</h3>
+        <p>Chart.js와 API를 사용해 데이터를 시각화하는 대시보드 페이지.</p>
+      </div>
+
     </div>
   </section>
 
-  <section id="contact">
-    <h2>📬 연락처</h2>
-    <p>📧 이메일: <a href="w1thfu11@daum.net">w1thfu11@daum.net</a></p>
-   </p>
-  </section>
-
   <footer>
-    <p>&copy; 2025 홍길동. All rights reserved.</p>
+    © 2025 Kyo. 모든 권리 보유.
   </footer>
-
 </body>
 </html>
-
