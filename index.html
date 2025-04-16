@@ -3,13 +3,14 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>KYO.zip</title>
+  <title>홍길동의 포트폴리오</title>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
   <style>
     :root {
-      --main-blue: #5ca6f0;
-      --dark-blue: #2c3e50;
-      --light-blue: #f4faff;
+      --main-blue: #2a6fdb;
+      --light-blue: #f0f6ff;
+      --dark-gray: #333;
+      --light-gray: #777;
       --white: #ffffff;
     }
 
@@ -21,15 +22,15 @@
 
     body {
       font-family: 'Noto Sans KR', sans-serif;
-      background-color: var(--light-blue);
-      color: var(--dark-blue);
+      background-color: var(--white);
+      color: var(--dark-gray);
       line-height: 1.6;
     }
 
     header {
-      background: var(--main-blue);
+      background-color: var(--main-blue);
       color: var(--white);
-      padding: 3rem 1rem;
+      padding: 2rem 1rem;
       text-align: center;
     }
 
@@ -43,121 +44,100 @@
     }
 
     section {
-      padding: 3rem 1.5rem;
-      max-width: 1000px;
+      padding: 2rem 1rem;
+      max-width: 800px;
       margin: auto;
     }
 
     h2 {
-      font-size: 2rem;
-      margin-bottom: 1.5rem;
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
       color: var(--main-blue);
-      border-bottom: 2px solid var(--main-blue);
-      padding-bottom: 0.5rem;
     }
 
     .section-content {
-      margin-top: 1rem;
-    }
-
-    .info-item {
-      margin-bottom: 0.8rem;
+      background-color: var(--light-blue);
+      padding: 1rem;
+      border-radius: 0.5rem;
+      margin-bottom: 2rem;
     }
 
     .project {
-      background: var(--white);
-      padding: 1.5rem;
-      border-radius: 1rem;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-      margin-bottom: 1.5rem;
-    }
-
-    .project h3 {
-      color: var(--main-blue);
-      margin-bottom: 0.5rem;
+      margin-bottom: 1rem;
     }
 
     footer {
+      background-color: var(--light-blue);
       text-align: center;
-      padding: 2rem 1rem;
+      padding: 1rem;
       font-size: 0.9rem;
-      color: #555;
-      background-color: #e9f4ff;
+      color: var(--light-gray);
     }
 
-    @media (max-width: 500px) {
+    @media (max-width: 600px) {
       header h1 {
         font-size: 2rem;
+      }
+
+      h2 {
+        font-size: 1.5rem;
       }
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>PM 오윤경 포트폴리오</h1>
-    <p>함께 일할수록 빛나는 사람</p>
+    <h1>홍길동</h1>
+    <p>서비스 기획자 | Product Manager</p>
   </header>
 
   <section>
-    <h2>자기소개</h2>
+    <h2>소개</h2>
     <div class="section-content">
-      <div class="info-item"><strong>이름:</strong> 오윤경</div>
-      <div class="info-item"><strong>직무:</strong> 프로덕트 매니저 (PM)</div>
-      <div class="info-item"><strong>이메일:</strong> example@email.com</div>
-      <div class="info-item"><strong>한 줄 소개:</strong> 함께 일할수록 빛나는 사람, PM 오윤경입니다. 데이터로 소통하는 SQLD 분석 능력, 영화 전공으로 익힌 콘텐츠 제작, 마케팅 경력으로 더 나은 서비스를 만듭니다.</div>
-    </div>
-  </section>
-
-  <section>
-    <h2>스킬셋</h2>
-    <div class="section-content">
-      <ul>
-        <li><strong>데이터 분석:</strong> SQL, Excel, Google Analytics</li>
-        <li><strong>디자인 툴:</strong> Figma, Photoshop</li>
-        <li><strong>프로젝트 관리:</strong> Jira, Notion, Trello</li>
-        <li><strong>기타 역량:</strong> 콘텐츠 제작, 마케팅 전략</li>
-      </ul>
+      <p>안녕하세요. 사용자 중심의 서비스를 기획하고자 노력하는 Product Manager 홍길동입니다. 다양한 프로젝트 경험을 통해 문제 해결 능력을 키워왔습니다.</p>
     </div>
   </section>
 
   <section>
     <h2>경력</h2>
     <div class="section-content">
-      <div class="info-item"><strong>우아한 형제들 (2023.09 - 현재)</strong></div>
-      <div class="info-item">직무: 마케터</div>
-      <div class="info-item">주요 업무: 마케팅 캠페인 기획, 사용자 분석, 콘텐츠 운영</div>
-    </div>
-  </section>
-
-  <section>
-    <h2>학력</h2>
-    <div class="section-content">
-      <div class="info-item"><strong>명지대학교 예술학부 영화전공</strong></div>
+      <p><strong>ABC 회사</strong> (2020.01 - 현재)</p>
+      <ul>
+        <li>신규 서비스 기획 및 출시</li>
+        <li>사용자 피드백을 반영한 기능 개선</li>
+      </ul>
+      <p><strong>XYZ 스타트업</strong> (2018.06 - 2019.12)</p>
+      <ul>
+        <li>모바일 앱 기획 및 프로토타입 제작</li>
+        <li>시장 조사 및 경쟁사 분석</li>
+      </ul>
     </div>
   </section>
 
   <section>
     <h2>프로젝트</h2>
-
-    <div class="project">
-      <h3>📝 Todo 앱 (React)</h3>
-      <p>React로 제작한 할 일 목록 앱. 컴포넌트 구조와 상태 관리 연습용으로 개발.</p>
+    <div class="section-content">
+      <div class="project">
+        <h3>프로젝트 A</h3>
+        <p>사용자 맞춤형 추천 시스템 기획 및 구현</p>
+      </div>
+      <div class="project">
+        <h3>프로젝트 B</h3>
+        <p>모바일 앱 리뉴얼 프로젝트 진행</p>
+      </div>
     </div>
+  </section>
 
-    <div class="project">
-      <h3>🌐 반응형 웹사이트</h3>
-      <p>HTML, CSS, JS로 제작한 반응형 웹사이트. 다양한 화면 크기에서 자연스럽게 보이도록 구현.</p>
+  <section>
+    <h2>연락처</h2>
+    <div class="section-content">
+      <p>Email: example@example.com</p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/example" target="_blank">linkedin.com/in/example</a></p>
     </div>
-
-    <div class="project">
-      <h3>📊 데이터 시각화 대시보드</h3>
-      <p>Chart.js와 API를 사용해 데이터를 시각화하는 대시보드 페이지. 사용자 친화적 UI를 통해 데이터 이해도를 향상시킴.</p>
-    </div>
-
   </section>
 
   <footer>
-    © 2025 Kyo. 모든 권리 보유.
+    © 2025 홍길동. 모든 권리 보유.
   </footer>
 </body>
 </html>
