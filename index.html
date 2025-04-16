@@ -9,7 +9,7 @@
     :root {
       --main-blue: #5ca6f0;
       --dark-blue: #2c3e50;
-      --light-blue: #d6ecff;
+      --light-blue: #f4faff;
       --white: #ffffff;
     }
 
@@ -60,6 +60,10 @@
       margin-top: 1rem;
     }
 
+    .info-item {
+      margin-bottom: 0.8rem;
+    }
+
     .project {
       background: var(--white);
       padding: 1.5rem;
@@ -90,45 +94,51 @@
 </head>
 <body>
   <header>
-    <h1>PM 오윤경에 대한 압축폴더</h1>
+    <h1>PM 오윤경 포트폴리오</h1>
     <p>함께 일할수록 빛나는 사람</p>
   </header>
 
   <section>
-    <h2>About Me</h2>
+    <h2>자기소개</h2>
     <div class="section-content">
-      <p>함께 일할수록 빛나는 사람, PM 오윤경입니다.데이터로 소통하기 위한 SQLD 데이터 추출 역량, 영화전공으로 익혀온 콘텐츠 제작,그동안 쌓아온 마케팅 경력으로 사용자에게 더 나은 서비스를 제공하고 싶습니다다 .</p>
+      <div class="info-item"><strong>이름:</strong> 오윤경</div>
+      <div class="info-item"><strong>직무:</strong> 프로덕트 매니저 (PM)</div>
+      <div class="info-item"><strong>이메일:</strong> example@email.com</div>
+      <div class="info-item"><strong>한 줄 소개:</strong> 함께 일할수록 빛나는 사람, PM 오윤경입니다. 데이터로 소통하는 SQLD 분석 능력, 영화 전공으로 익힌 콘텐츠 제작, 마케팅 경력으로 더 나은 서비스를 만듭니다.</div>
     </div>
   </section>
 
   <section>
-    <h2>Skills</h2>
+    <h2>스킬셋</h2>
     <div class="section-content">
       <ul>
-        <li><strong>SKILL:</strong> SQL, Design</li>
+        <li><strong>데이터 분석:</strong> SQL, Excel, Google Analytics</li>
+        <li><strong>디자인 툴:</strong> Figma, Photoshop</li>
+        <li><strong>프로젝트 관리:</strong> Jira, Notion, Trello</li>
+        <li><strong>기타 역량:</strong> 콘텐츠 제작, 마케팅 전략</li>
       </ul>
     </div>
   </section>
 
   <section>
-    <h2>Career</h2>
+    <h2>경력</h2>
     <div class="section-content">
-      <p><strong>회사명:</strong> 우아한 형제들 (2023.09 - 현재)</p>
-      <p><strong>직무:</strong> 마케터</p>
-  
+      <div class="info-item"><strong>우아한 형제들 (2023.09 - 현재)</strong></div>
+      <div class="info-item">직무: 마케터</div>
+      <div class="info-item">주요 업무: 마케팅 캠페인 기획, 사용자 분석, 콘텐츠 운영</div>
     </div>
   </section>
 
   <section>
-    <h2>Education</h2>
+    <h2>학력</h2>
     <div class="section-content">
-      <p><strong>대학교:</strong> 명지대학교 예술학부 영화전공공</p>
-
+      <div class="info-item"><strong>명지대학교 예술학부 영화전공</strong></div>
     </div>
   </section>
 
   <section>
-    <h2>Projects</h2>
+    <h2>프로젝트</h2>
+
     <div class="project">
       <h3>📝 Todo 앱 (React)</h3>
       <p>React로 제작한 할 일 목록 앱. 컴포넌트 구조와 상태 관리 연습용으로 개발.</p>
@@ -136,13 +146,14 @@
 
     <div class="project">
       <h3>🌐 반응형 웹사이트</h3>
-      <p>HTML, CSS, JS로 제작한 반응형 웹사이트. 다양한 화면 크기에서 자연스럽게 보이도록 제작.</p>
+      <p>HTML, CSS, JS로 제작한 반응형 웹사이트. 다양한 화면 크기에서 자연스럽게 보이도록 구현.</p>
     </div>
 
     <div class="project">
       <h3>📊 데이터 시각화 대시보드</h3>
-      <p>Chart.js와 API를 사용해 데이터를 시각화하는 대시보드 페이지.</p>
+      <p>Chart.js와 API를 사용해 데이터를 시각화하는 대시보드 페이지. 사용자 친화적 UI를 통해 데이터 이해도를 향상시킴.</p>
     </div>
+
   </section>
 
   <footer>
@@ -150,4 +161,3 @@
   </footer>
 </body>
 </html>
-
